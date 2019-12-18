@@ -1,0 +1,6 @@
+INSERT INTO [general].Schedule(Name,[Start],[End],ScheduleTypeDVId) VALUES (22,'2019.04.04','2019.04.17',[common].[GetDictValueId]('ScheduleType','Sprint'))
+INSERT INTO [general].Schedule(Name,[Start],[End],ScheduleTypeDVId) VALUES (23,'2019.04.18','2019.05.01',[common].[GetDictValueId]('ScheduleType','Sprint'))
+INSERT INTO [general].Schedule(Name,[Start],[End],ScheduleTypeDVId) VALUES (24,'2019.05.02','2019.06.15',[common].[GetDictValueId]('ScheduleType','Sprint'))
+INSERT INTO [general].Schedule(Name,[Start],[End],ScheduleTypeDVId) VALUES (25,'2019.06.16','2019.06.29',[common].[GetDictValueId]('ScheduleType','Sprint'))
+INSERT INTO [general].Schedule(Name,[Start],[End],ScheduleTypeDVId) VALUES (26,'2019.06.30','2019.07.12',[common].[GetDictValueId]('ScheduleType','Sprint'))
+INSERT INTO [general].Schedule(Name,[Start],[End],ScheduleTypeDVId) VALUES (27,'2019.07.13','2019.07.27',[common].[GetDictValueId]('ScheduleType','Sprint'))

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.0" />
+    <PackageReference Include="ProductivityTools.DateTimeTools" Version="0.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ProductivityTools.ReleaseManagment.Contract\ProductivityTools.ReleaseManagment.Contract.csproj" />
+    <ProjectReference Include="..\ProductivityTools.ReleaseManagment.App.InternalContract\ProductivityTools.ReleaseManagment.App.InternalContract.csproj" />
+    <ProjectReference Include="..\ProductivityTools.ReleaseManagment.EF\ProductivityTools.ReleaseManagment.EF.csproj" />
+  </ItemGroup>
+
+</Project>

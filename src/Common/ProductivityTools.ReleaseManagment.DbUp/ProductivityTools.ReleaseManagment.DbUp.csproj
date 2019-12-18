@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Script\00001.CreateDatabase.sql" />
+    <None Remove="Script\00002.Create Schedule.sql" />
+    <None Remove="Script\00003 AlterSchedule.sql" />
+    <None Remove="Script\00004.Common schema.sql" />
+    <None Remove="Script\00005.Dictionary.sql" />
+    <None Remove="Script\00006.GetDictValueId.sql" />
+    <None Remove="Script\00007.AddDictionary.sql" />
+    <None Remove="Script\00007.TaskType dictionary.sql" />
+    <None Remove="Script\00008 - Copy.Task.sql" />
+    <None Remove="Script\00008.AnSchema.sql" />
+    <None Remove="Script\00010.Sprint insert.sql" />
+    <None Remove="Script\00011.BugFix.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Script\00001.CreateDatabase.sql" />
+    <EmbeddedResource Include="Script\00003 AlterSchedule.sql" />
+    <EmbeddedResource Include="Script\00002.Create Schedule.sql" />
+    <EmbeddedResource Include="Script\00007.AddDictionary.sql" />
+    <EmbeddedResource Include="Script\00011.BugFix.sql" />
+    <EmbeddedResource Include="Script\00010.Sprint insert.sql" />
+    <EmbeddedResource Include="Script\00004.Common schema.sql" />
+    <EmbeddedResource Include="Script\00005.Dictionary.sql" />
+    <EmbeddedResource Include="Script\00006.GetDictValueId.sql" />
+    <EmbeddedResource Include="Script\00007.TaskType dictionary.sql" />
+    <EmbeddedResource Include="Script\00008.AnSchema.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ProductivityTools.DBUp" Version="0.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProductivityTools.ReleaseManagment.Configuration\ProductivityTools.ReleaseManagment.Configuration.csproj" />
+  </ItemGroup>
+
+</Project>
